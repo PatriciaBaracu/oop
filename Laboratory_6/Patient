@@ -1,0 +1,17 @@
+package com.Laboratory6;
+
+import java.util.Date;
+
+public class Patient extends Person {
+    public String id;
+    public String FullName;
+    public String Gender;
+    public Date brithDate;
+    public Integer age;
+    public Date accesptedDate;
+    public String SicknessHistory;
+    public String prescriptions;
+    public String allergies;
+    public String SpecialRequest;
+
+}

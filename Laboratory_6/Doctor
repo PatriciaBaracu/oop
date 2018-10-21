@@ -1,0 +1,9 @@
+package com.Laboratory6;
+
+
+    public class Doctor extends  Operation_Staff{
+        protected String specialty;
+        protected String location;
+
+
+    }

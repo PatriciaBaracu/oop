@@ -1,0 +1,8 @@
+package com.Laboratory6;
+
+public class Hospital {
+    public String name;
+    public String Adress;
+    public String phone;
+
+    }

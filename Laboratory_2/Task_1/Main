@@ -1,0 +1,22 @@
+package com.laboratory2.task1;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Box box1 = new Box();
+        Box box2 = new Box(5);
+        Box box3 = new Box(4, 7, 9);
+        System.out.println("The dimension of first box1  :" + box1.toString());
+        System.out.println("The area of the box1 :" + box1.areaCalc());
+        System.out.println("The volume of the box1:" + box1.volumCalc());
+
+        System.out.println("The dimension of first box2" + box2.toString());
+        System.out.println("The dimension of first box2" + box2.toString());
+        System.out.println("The dimension of first box2" + box2.toString());
+
+        System.out.println("The dimension of first box3" +box3.toString());
+        System.out.println("The dimension of first box3" + box3.toString());
+        System.out.println("The dimension of first box3" + box3.toString());
+
+    }
+}

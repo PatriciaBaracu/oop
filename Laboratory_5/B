@@ -1,0 +1,24 @@
+package com.laboratory5;
+
+public class B extends A{
+
+
+    B() {
+        super("ionel");
+        System.out.println("constructor de la B fara parametri");
+    }
+    protected   String b ;
+    public B (String b){
+        System.out.println("Constructor de la B cu parametru ");
+        this.b=b;
+    }
+
+    @Override
+    public String toString() {
+        return "B{" +
+                "b='" + b + '\'' +
+                ", a='" + a + '\'' +
+                ", x=" + x +
+                '}';
+    }
+}

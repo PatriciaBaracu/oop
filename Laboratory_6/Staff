@@ -1,0 +1,10 @@
+package com.Laboratory6;
+
+public class Staff extends Person{
+
+    public Integer joined;
+    public String education;
+    public String certification;
+    public String languages;
+
+}

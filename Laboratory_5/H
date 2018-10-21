@@ -1,0 +1,36 @@
+package com.laboratory5;
+
+public class H extends G {
+    H() {
+        super("ghena");
+        System.out.println("H is called empty");
+    }
+
+
+    protected String h;
+    protected X x=new X ("x2");
+    public H(String h) {
+        this.h = h;
+        System.out.println("H is called with parametru" );
+    }
+
+
+    @Override
+    public String toString() {
+        return "H{" +
+                "h='" + h + '\'' +
+                ", x=" + x +
+                ", g='" + g + '\'' +
+                ", f='" + f + '\'' +
+                ", e='" + e + '\'' +
+                ", d='" + d + '\'' +
+                ", x=" + x +
+                ", c='" + c + '\'' +
+                ", b='" + b + '\'' +
+                ", a='" + a + '\'' +
+                ", x=" + x +
+                '}';
+    }
+}
+
+

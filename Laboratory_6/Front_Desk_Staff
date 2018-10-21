@@ -1,0 +1,5 @@
+package com.Laboratory6;
+
+
+    public class Front_Desk_Staff extends Adiministrative_Staff{
+    }

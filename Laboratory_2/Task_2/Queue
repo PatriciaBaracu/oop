@@ -1,0 +1,102 @@
+package com.laboratory2.task2;
+
+public class Queue
+{
+    // Reprezinta primul element
+    private ObjectBox head = null;
+    // Reprezinta ultimul element
+    private ObjectBox tail = null;
+    // Un cimp pentru stocarea marimii QUEUE
+    private int size = 0;
+
+    public void push(Object obj) {
+        //Se creeaza un obiect auxiliar si se include un element nou în el
+        ObjectBox ob = new ObjectBox();
+        ob.setObject(obj);
+        // Tail este goala ,nu exista inca elemente in ea
+        if (head == null) {
+            // head nostru indica primul element
+            head = ob;
+        } else {
+            // Daca acesta nu este primul element, atunci ultimul element din tail
+            //         a indicat noul element primit
+            tail.setNext(ob);
+        }
+        // Se muta un nou element ,daca e primul element , atunci tail=head = same element
+        tail = ob;
+
+        size++;
+    }
+
+    public Object pull(){
+        // Daca nu mai sunt elemente atunci size-ul e null
+         if (size == 0) {
+            return null;
+        }
+        // Obtinem obiectul din head
+        Object obj = head.getObject();
+        // Transmitem celuilat element
+        head = head.getNext();
+        // Daca acesta era singurul element, atunci head devine null
+        //  și apoi tail trebuie sa specifice si null.
+        if (head == null) {
+            tail = null;
+        }
+
+        size--;
+
+        return obj;
+    }
+
+    public Object get(int index) {
+
+        if(size == 0 || index >= size || index < 0) {
+            return null;
+        }
+        // Configurez un indicator, pe care îl vom muta la head
+        ObjectBox current = head;
+
+        int pos = 0;
+        //Până când poziția a ajuns la indicele dorit
+        while(pos < index) {
+            // Trecerea la elementul următor
+            current = current.getNext();
+
+            pos++;
+        }
+        //Am ajuns în poziția dorită și acum putem returna elementul
+        Object obj = current.getObject();
+        return obj;
+    }
+
+    public int size() {
+        return size;
+    }
+
+
+    private class ObjectBox
+    {
+
+        private Object object;
+        //Câmp pentru specificarea elementului următor în lanț Dacă este NULL, atunci acesta este ultimul element
+        private ObjectBox next;
+
+        public Object getObject() {
+            return object;
+        }
+
+        public void setObject(Object object) {
+            this.object = object;
+        }
+
+        public ObjectBox getNext() {
+            return next;
+        }
+
+        public void setNext(ObjectBox next) {
+            this.next = next;
+        }
+
+
+    }
+}

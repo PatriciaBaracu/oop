@@ -1,0 +1,45 @@
+public class Box {
+    private  double height;
+    private double depth;
+    private double weight;
+
+    public Box(double value  ) {
+        height=value;
+        depth=value;
+        weight=value;
+
+    }
+
+
+        public Box() {
+            height = 1;
+            weight = 1;
+            depth = 1;
+
+        }
+        public  Box(double height,double weight,double depth)
+        {
+            this.height=height;
+            this.weight=weight;
+            this.depth=depth;
+
+        }
+
+
+
+
+
+    @Override
+    public String toString() {
+        return ("The dimension of the box is : " + weight + "x" + height + "x" + depth + "x");
+    }
+        public  double areaCalc(){
+            return 2*(weight*height + depth*height+ weight*depth);}
+
+            public double volumCalc() {
+                return weight*height* depth;
+
+
+                }
+
+        }

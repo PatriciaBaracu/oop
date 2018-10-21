@@ -1,0 +1,20 @@
+package com.laboratory1.task1;
+
+public class Monitor {
+
+
+        int height;
+        int weight ;
+        String color ;
+        float diagnal ;
+
+
+        boolean compare(Monitor m2)
+        {
+            if (height== m2.height&& weight==m2.weight && color==m2.color&& diagnal==m2.diagnal)
+                return true;
+            return false;
+
+        }
+
+    }

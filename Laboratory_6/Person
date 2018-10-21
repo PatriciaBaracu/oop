@@ -5,7 +5,7 @@ public class Person {
     public  String middleNane;
     public String FullName;
     public Date birthDate;
-    public String Gender;
+    public Gender Gender;
     public Integer Phone ;
     private Hospital hospital;
     public Person(){

@@ -1,0 +1,6 @@
+package com.Laboratory6;
+
+public class Operation_Staff extends Staff{
+
+
+    }

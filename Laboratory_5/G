@@ -1,0 +1,33 @@
+package com.laboratory5;
+
+public class G extends F {
+    G() {
+        super("fiona");
+        System.out.println("G is called empty");
+    }
+
+
+    public String g;
+
+    public G(String g) {
+        this.g = g;
+        System.out.println("G is called with parametru" );
+    }
+
+
+    @Override
+    public String toString() {
+        return "G{" +
+                "g='" + g + '\'' +
+                ", x=" + x +
+                ", f='" + f + '\'' +
+                ", e='" + e + '\'' +
+                ", d='" + d + '\'' +
+                ", x=" + x +
+                ", c='" + c + '\'' +
+                ", b='" + b + '\'' +
+                ", a='" + a + '\'' +
+                ", x=" + x +
+                '}';
+    }
+}

@@ -1,0 +1,7 @@
+package com.Laboratory6;
+
+
+
+    public enum Gender {
+        Male,Female
+    }

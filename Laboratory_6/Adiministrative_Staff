@@ -1,0 +1,9 @@
+package com.Laboratory6;
+
+public class Adiministrative_Staff {
+    public class Adiminstrative_Staff extends Staff {
+        private String FullName ;
+
+    }
+
+}

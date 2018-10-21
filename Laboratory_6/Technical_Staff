@@ -1,0 +1,5 @@
+package com.Laboratory6;
+
+    public class Technical_Staff extends Staff {
+
+    }

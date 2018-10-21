@@ -1,0 +1,38 @@
+package com.laboratory1.task1;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        Monitor monitor = new Monitor();
+
+        monitor.height =10 ;
+        monitor.weight= 15;
+        monitor.diagnal= 15.6f;
+        monitor.color = "Black";
+
+        Monitor monitor2 = new Monitor();
+        monitor2.height = 9;
+        monitor2.weight = 10;
+        monitor2.diagnal = 13.2f;
+        monitor2.color="Blue";
+
+        Monitor monitor3 = new Monitor();
+        monitor3.height=9;
+        monitor3.weight=10;
+        monitor3.diagnal=13.2f;
+        monitor3.color="Blue";
+
+        if (monitor.compare(monitor2)) {
+            System.out.println("Monitors are eqal");
+        } else {
+            System.out.println("Monitors are different ");
+        }
+
+        if (monitor2.compare(monitor3)) System.out.println("Monitors are eqal");
+        else System.out.println("monitors are different");
+    }
+
+
+
+}

@@ -1,0 +1,36 @@
+package com.laboratory1.task2;
+
+public class Student {
+
+
+        private String name;
+        double averageMark;
+        int age;
+
+        public Student(String name) {
+                this.name = name;
+        }
+
+        public Student() {
+        }
+
+        public void setName(String name) {
+                this.name = name;
+        }
+
+        //public void  setName(String newName ) {name=newName;}
+//
+//        String getname (){
+//        return name;
+//    }
+//    public void setAverageMark(double newaverageMark){averageMark= newaverageMark;}
+//
+//   Double getaverageMark(){
+//        return averageMark;
+//    }
+//    public  void  setage( int newAge){age=newAge;}
+//    int getAge(){
+//    return age;
+//    }
+
+}

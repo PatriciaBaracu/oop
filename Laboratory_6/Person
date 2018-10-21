@@ -1,0 +1,21 @@
+public class Person {
+
+    public String title;
+    public String  givenName;
+    public  String middleNane;
+    public String FullName;
+    public Date birthDate;
+    public String Gender;
+    public Integer Phone ;
+    private Hospital hospital;
+    public Person(){
+        hospital= new Hospital();
+    }
+public Hospital getHospital(){
+        return hospital;
+}
+
+
+
+
+}

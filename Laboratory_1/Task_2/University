@@ -1,0 +1,32 @@
+package com.laboratory1.task2;
+
+public class University {
+    String name;
+    int foundationYear ;
+    Student[] listOfStudent;
+
+//    public void  setName(String newName ) {name=newName;}
+//
+//    String getname (){
+//        return name;
+//    }
+//
+//    public void setFoundationYear(int newfoundationYear){foundationYear=newfoundationYear;}
+//    int getFoundationYear (){return  foundationYear;}
+//
+//    public void setListOfStudent(Student[] newlistOfStudent) {listOfStudent=newlistOfStudent;}
+//
+//    public Student[] getListOfStudent() {
+//        return listOfStudent;
+
+        double getAverage (Student[] studMark){
+            double average = 0;
+            int i;
+            for( i = 0; i < studMark.length ; i++){
+                average = studMark[i].averageMark + average;
+            }
+            average = average/studMark.length;
+            return average;
+        }
+
+}

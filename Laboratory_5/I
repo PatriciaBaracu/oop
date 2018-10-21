@@ -1,0 +1,33 @@
+package com.laboratory5;
+
+public class I extends H {
+    I() {
+        super("ion");
+        System.out.println("I is called empty");
+    }
+
+
+    protected String i;
+    protected X x=new X ("x3");
+    public I(String i) {
+        this.i = i;
+        System.out.println("I is called with parametru" );
+    }
+
+
+    @Override
+    public String toString() {
+        return "I{" +
+                "i='" + i + '\'' +
+                ", x=" + x +
+                ", f='" + f + '\'' +
+                ", e='" + e + '\'' +
+                ", d='" + d + '\'' +
+                ", x=" + x +
+                ", c='" + c + '\'' +
+                ", b='" + b + '\'' +
+                ", a='" + a + '\'' +
+                ", x=" + x +
+                '}';
+    }
+}

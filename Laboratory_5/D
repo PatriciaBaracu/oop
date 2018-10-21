@@ -1,0 +1,28 @@
+package com.laboratory5;
+
+public class D extends C {
+    D() {
+        super("daria");
+        System.out.println("D is called empty");
+    }
+
+
+    protected String d;
+    protected X x = new X("x1");
+    public D(String d) {
+        this.d = d;
+        System.out.println("D is called with parametru" );
+    }
+
+
+    @Override
+    public String toString() {
+        return "D{" +
+                "d='" + d + '\'' +
+                ", c='" + c + '\'' +
+                ", b='" + b + '\'' +
+                ", a='" + a + '\'' +
+                ", x=" + x +
+                '}';
+    }
+}

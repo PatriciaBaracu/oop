@@ -1,0 +1,13 @@
+package com.Laboratory6;
+
+public class Date {
+    protected String date;
+
+    public void setDate(String d) {
+        this.date = d;
+    }
+
+    public String getDate() {
+        return date;
+    }
+}

@@ -1,0 +1,27 @@
+package com.laboratory5;
+
+public class J extends F{
+    J(){
+        super("jana");
+        System.out.println("J is called ");
+    }
+    public String j;
+
+    public J (String j){
+        this.j=j;
+    }
+
+    @Override
+    public String toString() {
+        return "J{" +
+                "j='" + j + '\'' +
+                ", f='" + f + '\'' +
+                ", e='" + e + '\'' +
+                ", d='" + d + '\'' +
+                ", c='" + c + '\'' +
+                ", b='" + b + '\'' +
+                ", a='" + a + '\'' +
+                ", x=" + x +
+                '}';
+    }
+}

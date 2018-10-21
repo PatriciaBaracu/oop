@@ -1,0 +1,38 @@
+package com.laboratory5;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        A a =new A("ana");
+        System.out.println(a);
+
+        B b=new B("boris");
+        System.out.println(b);
+
+        C c=new C("calin");
+        System.out.println(c);
+
+        D d =new D("daniela");
+        System.out.println(d);
+
+        E e = new E("eugenia");
+        System.out.println(e);
+
+        F f=new F("fiona");
+        System.out.println(f);
+
+        G g=new G("ghena");
+        System.out.println(g);
+
+        H h=new H("hermione");
+        System.out.println(h);
+
+         I i=new I("ion");
+        System.out.println(f);
+
+        J j=new  J("jerry");
+        System.out.println(j);
+
+    }
+}
